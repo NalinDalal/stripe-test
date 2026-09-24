@@ -12,7 +12,7 @@ async function createPayment(amount, currency) {
     amount: paymentIntent.amount,
     currency: paymentIntent.currency,
     status: paymentIntent.status,
-    source: paymentIntent.source,
+    paymentMethod: paymentIntent.payment_method, // Added new field
     client_secret: paymentIntent.client_secret,
   };
 }
