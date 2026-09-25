@@ -9,7 +9,7 @@ async function handleWebhook(event) {
     console.log(`Amount: ${paymentIntent.amount}`);
     console.log(`Currency: ${paymentIntent.currency}`);
     console.log(`Status: ${paymentIntent.status}`);
-    console.log(`Source: ${paymentIntent.source}`);
+    console.log(`Payment Method: ${paymentIntent.payment_method}`);
     console.log(`Client Secret: ${paymentIntent.client_secret}`);
     
     return {
@@ -17,7 +17,7 @@ async function handleWebhook(event) {
       amount: paymentIntent.amount,
       currency: paymentIntent.currency,
       status: paymentIntent.status,
-      source: paymentIntent.source,
+      paymentMethod: paymentIntent.payment_method,
     };
   }
   
