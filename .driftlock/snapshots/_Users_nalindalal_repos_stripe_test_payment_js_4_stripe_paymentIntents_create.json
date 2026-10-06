@@ -1,0 +1,33 @@
+{
+  "request": {
+    "amount": {
+      "kind": "number"
+    },
+    "currency": {
+      "kind": "string"
+    }
+  },
+  "response": {
+    "id": {
+      "kind": "string"
+    },
+    "object": {
+      "kind": "string"
+    },
+    "amount": {
+      "kind": "number"
+    },
+    "currency": {
+      "kind": "string"
+    },
+    "status": {
+      "kind": "string"
+    },
+    "client_secret": {
+      "kind": "string"
+    },
+    "payment_method": {
+      "kind": "string"
+    }
+  }
+}
