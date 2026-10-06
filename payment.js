@@ -3,7 +3,7 @@ const stripe = Stripe('sk_test_123');
 
 async function createPayment(amount, currency) {
   const paymentIntent = await stripe.paymentIntents.create({
-    amount,
+    amount: String(amount), // Convert amount to string as per schema change
     currency,
   });
 
